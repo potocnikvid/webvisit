@@ -5,46 +5,46 @@ import React, { useState } from "react";
 
 export default function References() {
     return (
-        <div id="references" class="container mx-auto max-w-7xl">
-            <div class="flex items-center justify-between">
+        <div id="references" className="container mx-auto max-w-7xl">
+            <div className="flex items-center justify-between">
                 <div>
-                    <h2 class="text-3xl lg:text-5xl">References</h2>
+                    <h2 className="text-3xl lg:text-5xl">References</h2>
                 </div>
             </div>
-            <div class="grid grid-cols-1 gap-4 mt-8 md:grid-cols-2 lg:grid-cols-3">
-                <div class="flex flex-col items-center justify-center">
+            <div className="grid grid-cols-1 gap-4 mt-8 md:grid-cols-2 lg:grid-cols-3">
+                <div className="flex flex-col items-center justify-center">
                     <img src="/svgs/google.svg" />
-                    <p class="text-xl mt-4">Google</p>
+                    <p className="text-xl mt-4">Google</p>
                 </div>
-                <div class="flex flex-col items-center justify-center">
+                <div className="flex flex-col items-center justify-center">
                     <img src="/svgs/google.svg" />
-                    <p class="text-xl mt-4">Google</p>
+                    <p className="text-xl mt-4">Google</p>
                 </div>
             </div>
 
-            {/* <div class="flex flex-col lg:flex-row lg:space-x-12">
-                <div class="flex flex-col space-y-8 lg:space-y-0 lg:space-x-12 lg:flex-row">
-                    <div class="flex flex-col space-y-4">
-                        <div class="flex flex-row space-x-4">
+            {/* <div className="flex flex-col lg:flex-row lg:space-x-12">
+                <div className="flex flex-col space-y-8 lg:space-y-0 lg:space-x-12 lg:flex-row">
+                    <div className="flex flex-col space-y-4">
+                        <div className="flex flex-row space-x-4">
                             <img src="/svgs/google.svg" />
-                            <div class="flex flex-col">
-                                <h3 class="text-xl">Google</h3>
-                                <p class="text-sm">Google</p>
+                            <div className="flex flex-col">
+                                <h3 className="text-xl">Google</h3>
+                                <p className="text-sm">Google</p>
                             </div>
                         </div>
-                        <p class="text-sm">
+                        <p className="text-sm">
                             "NINE4 is a great partner for us. They are very professional and always deliver on time."
                         </p>
                     </div>
-                    <div class="flex flex-col space-y-4">
-                        <div class="flex flex-row space-x-4">
+                    <div className="flex flex-col space-y-4">
+                        <div className="flex flex-row space-x-4">
                             <img src="/svgs/google.svg" />
-                            <div class="flex flex-col">
-                                <h3 class="text-xl">Google</h3>
-                                <p class="text-sm">Google</p>
+                            <div className="flex flex-col">
+                                <h3 className="text-xl">Google</h3>
+                                <p className="text-sm">Google</p>
                             </div>
                         </div>
-                        <p class="text-sm">
+                        <p className="text-sm">
                             "NINE4 is a great partner for us. They are very professional and always deliver on time."
                         </p>
                     </div>
@@ -58,7 +58,7 @@ export default function References() {
                         allowfullscreen=""
                         loading="lazy"
                     ></iframe>
-                    <h2 class="mt-4 text-lg">Cubo</h2>
+                    <h2 className="mt-4 text-lg">Cubo</h2>
                 </div> */}
         </div>
     );

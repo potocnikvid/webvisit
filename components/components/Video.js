@@ -7,15 +7,14 @@ import Dropdown from "./Dropdown";
 // import Nav from "./Nav";
 export default function Video() {
     return (
-        <div class="relative flex items-center justify-center h-screen mb-12 overflow-hidden">
-            <div class="absolute text-[#fefefe] top-0 z-40 w-full pointer-events-none">
+        <div className="relative flex items-center justify-center h-screen mb-12 overflow-hidden">
+            <div className="absolute text-[#fefefe] top-0 z-40 w-full pointer-events-none">
                 <Nav />
-                {/* <SideOver /> */}
             </div>
-            <div class="relative z-30 p-5 w-full sm:w-4/5 lg:w-2/3 pointer-events-none">
+            <div className="relative z-30 p-5 w-full sm:w-4/5 lg:w-2/3 pointer-events-none">
                 <Landing />
             </div>
-            {/* <video autoPlay loop muted class="absolute z-10 w-auto min-w-full min-h-full max-w-none">
+            {/* <video autoPlay loop muted className="absolute z-10 w-auto min-w-full min-h-full max-w-none">
                     <source
                         src="https://assets.mixkit.co/videos/preview/mixkit-set-of-plateaus-seen-from-the-heights-in-a-sunset-26070-large.mp4"
                         // src="public/OutletLeziscMB5.mp4"
@@ -24,10 +23,10 @@ export default function Video() {
                     Your browser does not support the video tag.
                 </video> */}
             <iframe
-                class="ku-embed absolute z-10 w-auto min-w-full min-h-full max-w-none"
-                frameborder="0"
+                className="ku-embed absolute z-10 w-auto min-w-full min-h-full max-w-none"
+                frameBorder="0"
                 allow="xr-spatial-tracking; gyroscope; accelerometer"
-                allowfullscreen
+                allowFullScreen
                 scrolling="no"
                 src="https://kuula.co/share/collection/79Z2b?logo=-1&info=0&fs=0&vr=1&sd=1&gyro=0&autorotate=0.67&autop=5&autopalt=1&thumbs=4&alpha=0.60&inst=0&keys=0"
             ></iframe>

@@ -2,13 +2,13 @@ import { motion } from "framer-motion";
 
 export default function Landing() {
     return (
-        <div className="mx-auto justify-center space-y-3 pt-4 text-center mt-24 mb-[7rem] md:px-6 lg:mt-[11rem] lg:mb-[14.5rem] lg:space-y-6">
+        <div className="mx-auto justify-center space-y-3 pt-4 text-center mt-24 mb-[6rem] md:px-6 lg:mt-[11rem] lg:mb-[14.5rem] lg:space-y-6">
             <motion.h1
                 key="logo"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 0.8 }}
                 transition={{ duration: 0.4, delay: 0.8 }}
-                className="text-4xl text-white lg:text-6xl select-none"
+                className="text-4xl text-white xl:text-6xl select-none"
             >
                 Omogočite interaktivni <br className="hidden lg:flex" />
                 spletni obisk v 3D tehniki.
@@ -18,7 +18,7 @@ export default function Landing() {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 0.8 }}
                 transition={{ duration: 0.4, delay: 0.9 }}
-                className="text-md text-white basiersquare-medium lg:text-xl select-none"
+                className="text-md text-white basiersquare-medium xl:text-xl select-none"
             >
                 Interaktivni pogled s klikom miške.
             </motion.p>
@@ -57,7 +57,7 @@ export default function Landing() {
                     viewBox="0 0 24 24"
                     strokeWidth={2}
                     stroke="currentColor"
-                    className="w-12 h-12 mx-auto"
+                    className="animate-bounce w-12 h-12 mx-auto"
                 >
                     <path
                         strokeLinecap="round"

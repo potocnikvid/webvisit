@@ -12,7 +12,7 @@ import Video from "./components/Video";
 export default function Layout() {
     return (
         <>
-            <main class="h-full w-full scrollbar scrollbar-thumb-gray-900 scrollbar-track-gray-100">
+            <main className="h-full w-full scrollbar scrollbar-thumb-gray-900 scrollbar-track-gray-100">
                 <Video />
                 <References />
                 {/* <Team /> */}
