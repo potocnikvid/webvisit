@@ -35,7 +35,7 @@ export default function Video() {
                 frameBorder="0"
                 allowFullScreen
                 scrolling="no"
-                src="https://kuula.co/share/collection/79MSp?logo=-1&info=0&fs=0&vr=0&sd=1&gyro=0&autorotate=0.59&autop=5&autopalt=1&thumbs=3&inst=0&keys=0"
+                src="https://kuula.co/share/collection/79MSp?logo=-1&info=0&fs=0&vr=0&sd=1&gyro=0&autopalt=1&thumbs=3&inst=0&keys=0"
             ></iframe>
         </div>
     );
