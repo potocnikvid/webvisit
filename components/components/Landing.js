@@ -11,7 +11,7 @@ export default function Landing() {
                 className="text-4xl text-white xl:text-6xl select-none"
             >
                 Omogočite interaktivni <br className="hidden lg:flex" />
-                spletni obisk v 3D tehniki.
+                spletni obisk v 3D tehniki
             </motion.h1>
             <motion.p
                 key="logo"
@@ -20,7 +20,7 @@ export default function Landing() {
                 transition={{ duration: 0.4, delay: 0.9 }}
                 className="text-md text-white basiersquare-medium xl:text-xl select-none"
             >
-                Interaktivni pogled s klikom miške.
+                Interaktivni pogled s klikom miške
             </motion.p>
             {/* <motion.a
                 href="#jobs"

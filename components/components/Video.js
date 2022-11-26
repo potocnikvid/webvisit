@@ -22,13 +22,20 @@ export default function Video() {
                     />
                     Your browser does not support the video tag.
                 </video> */}
-            <iframe
+            {/* <iframe
                 className="ku-embed absolute z-10 w-auto min-w-full min-h-full max-w-none"
                 frameBorder="0"
                 allow="xr-spatial-tracking; gyroscope; accelerometer"
                 allowFullScreen
                 scrolling="no"
-                src="https://kuula.co/share/collection/79Z2b?logo=-1&info=0&fs=0&vr=1&sd=1&gyro=0&autorotate=0.67&autop=5&autopalt=1&thumbs=4&alpha=0.60&inst=0&keys=0"
+                src="https://kuula.co/share/collection/79Z2b?logo=-1&info=0&fs=0&vr=1&sd=1&gyro=0&autorotate=0.67&autop=5&autopalt=1&thumbs=3&alpha=0.60&inst=0&keys=0"
+            ></iframe> */}
+            <iframe
+                className="ku-embed absolute z-10 w-auto min-w-full min-h-full max-w-none"
+                frameBorder="0"
+                allowFullScreen
+                scrolling="no"
+                src="https://kuula.co/share/collection/79MSp?logo=-1&info=0&fs=0&vr=0&sd=1&gyro=0&autorotate=0.59&autop=5&autopalt=1&thumbs=3&inst=0&keys=0"
             ></iframe>
         </div>
     );
