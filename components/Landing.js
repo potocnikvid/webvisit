@@ -23,7 +23,7 @@ export default function Landing() {
                 Come join us and make the web better.
             </motion.p>
             <motion.a
-                href="#jobs"
+                href="#references"
                 key="logo"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}

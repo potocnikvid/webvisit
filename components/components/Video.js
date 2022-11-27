@@ -42,9 +42,9 @@ export default function Video() {
                 src="https://www.google.com/maps/embed?pb=!4v1669493840616!6m8!1m7!1sCAoSLEFGMVFpcFBjLU1pTU9IQi1BM3J5RHkxQUQxVnBYbmtMRTEyd3ZLLV9QNUN3!2m2!1d46.07527017919635!2d14.48439221530951!3f55.82!4f1.8299999999999983!5f0.7820865974627469"
                 // width="800"
                 // height="600"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
+                allowFullScreen=""
+                // loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
         </div>
     );

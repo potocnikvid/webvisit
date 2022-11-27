@@ -43,7 +43,7 @@ export default function Landing() {
                 </svg>
             </motion.a> */}
             <motion.a
-                href="#jobs"
+                href="#references"
                 key="logo"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 0.8 }}
