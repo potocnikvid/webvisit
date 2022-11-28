@@ -47,7 +47,7 @@ export default function Nav() {
                     <a href="/">Contact</a>
                     <a
                         href="/"
-                        className="rounded-full bg-[#332854] py-2.5 px-8 text-white decoration-2 underline-offset-2"
+                        className="rounded-full bg-[#332854] py-2.5 px-8 decoration-2 underline-offset-2"
                     >
                         Login
                     </a>

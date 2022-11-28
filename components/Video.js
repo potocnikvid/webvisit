@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import Landing from "./Landing";
-import Nav from "../Nav";
-import SideOver from "./SideOver";
-import Dropdown from "./Dropdown";
+import Nav from "./Nav";
+import SideOver from "./components/SideOver";
+import Dropdown from "./components/Dropdown";
 // import Drop from "./drop";
 // import Nav from "./Nav";
 export default function Video() {

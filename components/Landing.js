@@ -2,45 +2,67 @@ import { motion } from "framer-motion";
 
 export default function Landing() {
     return (
-        <div className="mx-auto mt-20 mb-[7rem] justify-center space-y-3 pt-4 text-center md:px-6 lg:mt-[11rem] lg:mb-[14.5rem] lg:space-y-6">
+        <div className="mx-auto justify-center space-y-3 pt-4 text-center mt-24 mb-[6rem] md:px-6 lg:mt-[11rem] lg:mb-[14.5rem] lg:space-y-6">
             <motion.h1
                 key="logo"
                 initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
+                animate={{ opacity: 0.8 }}
                 transition={{ duration: 0.4, delay: 0.8 }}
-                className="text-4xl lg:text-7xl"
+                className="text-4xl xl:text-6xl select-none"
             >
-                We make websites
-                <br className="hidden lg:flex" /> that perform.
+                Omogočite interaktivni <br className="hidden lg:flex" />
+                spletni obisk v 3D tehniki
             </motion.h1>
             <motion.p
                 key="logo"
                 initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
+                animate={{ opacity: 0.8 }}
                 transition={{ duration: 0.4, delay: 0.9 }}
-                className="text-md basiersquare-medium lg:text-xl"
+                className="text-md  basiersquare-medium xl:text-xl select-none"
             >
-                Come join us and make the web better.
+                Interaktivni pogled s klikom miške
             </motion.p>
+            {/* <motion.a
+                href="#jobs"
+                key="logo"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 0.8 }}
+                transition={{ duration: 0.4, delay: 1 }}
+                className="inline-flex items-center rounded-lg bg-gradient-to-r from-yellow-600 via-red-600 to-purple-600 py-3 px-4 pointer-events-auto select-none"
+            >
+                See open positions
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth={1.5}
+                    stroke="currentColor"
+                    className="w-6 h-6"
+                >
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                </svg>
+            </motion.a> */}
             <motion.a
                 href="#references"
                 key="logo"
                 initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
+                animate={{ opacity: 0.8 }}
                 transition={{ duration: 0.4, delay: 1 }}
-                className="inline-flex items-center rounded-lg bg-[#332b54] py-3 px-4 text-white"
+                className="mx-auto block py-3 absolute inset-x-0 bottom-0 px-6 w-24 pointer-events-auto select-none"
             >
-                See open positions{" "}
+                {" "}
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="ml-2 h-5 w-5"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth={2}
+                    stroke="currentColor"
+                    className="animate-bounce w-12 h-12 mx-auto"
                 >
                     <path
-                        fillRule="evenodd"
-                        d="M14.707 10.293a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 111.414-1.414L9 12.586V5a1 1 0 012 0v7.586l2.293-2.293a1 1 0 011.414 0z"
-                        clipRule="evenodd"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M19.5 5.25l-7.5 7.5-7.5-7.5m15 6l-7.5 7.5-7.5-7.5"
                     />
                 </svg>
             </motion.a>
