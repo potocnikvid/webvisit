@@ -3,7 +3,7 @@ import About from "../../components/About";
 import Footer from "../../components/Footer";
 import References from "../../components/References";
 
-export default function Layout() {
+export default function Streetview() {
     return (
         <>
             <main className="h-full w-full scrollbar bg-black scrollbar-thumb-gray-900 scrollbar-track-gray-100">

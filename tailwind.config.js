@@ -8,6 +8,12 @@ module.exports = {
                 144: "36rem",
                 160: "40rem",
             },
+            flex: {
+                0.25: "25%",
+                0.5: "50%",
+                0.75: "75%",
+                1: "100%",
+            },
         },
     },
     plugins: [require("tailwind-scrollbar"), require("@headlessui/tailwindcss")],

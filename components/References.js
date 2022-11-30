@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export default function References() {
     return (
-        <div id="references" className="mx-auto max-w-9xl">
+        <div id="references" className="mx-auto text-white max-w-9xl">
             <div className="block mb-0 sm:flex sm:flex-col items-center justify-between">
                 <div className="text-center">
                     <h2 className="text-4xl lg:text-5xl">Reference</h2>
