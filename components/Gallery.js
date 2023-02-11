@@ -1,125 +1,95 @@
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable @next/next/no-img-element */
-import React, { useState } from "react";
-import Image from "next/image";
+import ImageResponsive from "./ImageResponsive";
+import React, { useEffect } from "react";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 export default function Gallery() {
     return (
-        <div className="gap-4 m-4 columns-1 md:columns-2 lg:columns-3 2xl:columns-4">
-            <Image
-                className="mt-0 m-2 mb-4 align-middle w-full"
-                src="/images/Screenshot 2022-11-26 at 23.19.57.png"
-                alt=""
+        <div className="gap-6 m-6 columns-1 md:columns-2 lg:columns-3 2xl:columns-4">
+            <ImageResponsive
+                src="https://drive.google.com/file/d/1-unX8WSmjjl8lYYTnXtw80UtK50plLG-/view?usp=share_link"
+                alt="webvisit360"
                 width={1000}
                 height={1000}
             />
-
-            <Image
-                className="m-2  mb-4 align-middle w-full"
+            <ImageResponsive
                 src="/images/Screenshot 2022-11-26 at 23.51.22.png"
-                alt=""
+                alt="webvisit360"
                 width={1000}
                 height={1000}
-            />
-
-            <Image
-                className="m-2 mb-4 align-middle w-full"
-                src="/images/Screenshot 2022-11-26 at 23.48.03.png"
-                alt=""
-                width={1000}
-                height={1000}
-            />
-
-            <Image
-                className="m-2 mb-4 align-middle w-full"
+            />{" "}
+            <ImageResponsive
                 src="/images/Screenshot 2022-11-26 at 23.51.22.png"
-                alt=""
+                alt="webvisit360"
+                width={1000}
+                height={1000}
+            />{" "}
+            <ImageResponsive
+                src="/images/Screenshot 2022-11-26 at 23.51.22.png"
+                alt="webvisit360"
                 width={1000}
                 height={1000}
             />
-            <Image
-                className="m-2 mb-4 align-middle w-full"
-                src="/images/Screenshot 2022-11-26 at 23.48.03.png"
-                alt=""
+            <ImageResponsive
+                src="/images/Screenshot 2022-11-26 at 23.51.22.png"
+                alt="webvisit360"
                 width={1000}
                 height={1000}
             />
-
-            <Image
-                className="m-2 mb-4 align-middle w-full"
-                src="/images/Fanuc1.png"
-                alt=""
+            <ImageResponsive
+                src="/images/Screenshot 2022-11-26 at 23.51.22.png"
+                alt="webvisit360"
                 width={1000}
                 height={1000}
             />
-
-            <Image
-                className="m-2 mb-4 align-middle w-full"
-                src="/images/Screenshot 2022-11-26 at 23.48.03.png"
-                alt=""
+            <ImageResponsive
+                src="/images/Screenshot 2022-11-26 at 23.51.22.png"
+                alt="webvisit360"
                 width={1000}
                 height={1000}
             />
-            <Image
-                className="m-2 mb-4 align-middle w-full"
-                src="/images/Screenshot 2022-11-26 at 23.56.01.png"
-                alt=""
+            <ImageResponsive
+                src="/images/Screenshot 2022-11-26 at 23.51.22.png"
+                alt="webvisit360"
                 width={1000}
                 height={1000}
             />
-
-            <Image
-                className="m-2 mb-4 align-middle w-full"
-                src="/images/Screenshot 2022-11-26 at 23.25.31.png"
-                alt=""
+            <ImageResponsive
+                src="/images/Screenshot 2022-11-26 at 23.51.22.png"
+                alt="webvisit360"
                 width={1000}
                 height={1000}
             />
-
-            <Image
-                className="m-2 mb-4 align-middle w-full"
-                src="/images/Screenshot 2022-11-26 at 23.56.01.png"
-                alt=""
+            <ImageResponsive
+                src="/images/Screenshot 2022-11-26 at 23.51.22.png"
+                alt="webvisit360"
                 width={1000}
                 height={1000}
             />
-
-            <Image
-                className="m-2 mb-4 align-middle w-full"
-                src="/images/Fanuc1.png"
-                alt=""
+            <ImageResponsive
+                src="/images/Screenshot 2022-11-26 at 23.51.22.png"
+                alt="webvisit360"
                 width={1000}
                 height={1000}
             />
-            <Image
-                className="m-2 mb-4 align-middle w-full"
-                src="/images/Fanuc1.png"
-                alt=""
+            <ImageResponsive
+                src="/images/Screenshot 2022-11-26 at 23.51.22.png"
+                alt="webvisit360"
                 width={1000}
                 height={1000}
             />
-
-            <Image
-                className="m-2 mb-4 align-middle w-full"
-                src="/images/Screenshot 2022-11-26 at 23.25.31.png"
-                alt=""
+            <ImageResponsive
+                src="/images/Screenshot 2022-11-26 at 23.51.22.png"
+                alt="webvisit360"
                 width={1000}
                 height={1000}
             />
-
-            <Image
-                className="m-2 mb-4 align-middle w-full"
-                src="/images/Screenshot 2022-11-26 at 23.56.01.png"
-                alt=""
-                width={1000}
-                height={1000}
-            />
-
-            <Image
-                className="m-2 mb-4 align-middle w-full"
-                src="/images/Fanuc1.png"
-                alt=""
+            <ImageResponsive
+                src="/images/Screenshot 2022-11-26 at 23.51.22.png"
+                alt="webvisit360"
                 width={1000}
                 height={1000}
             />

@@ -7,7 +7,7 @@ import Dropdown from "./components/Dropdown";
 // import Nav from "./Nav";
 export default function Video() {
     return (
-        <div className="relative flex items-center justify-center h-screen mb-12 overflow-hidden">
+        <div className="relative flex items-center justify-center h-screen mb-12 scrollbar overflow-hidden">
             <div className="absolute text-[#fefefe] top-0 z-40 w-full pointer-events-none">
                 <Nav />
             </div>

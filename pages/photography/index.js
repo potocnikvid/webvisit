@@ -7,7 +7,7 @@ import Gallery from "../../components/Gallery";
 export default function Photography() {
     return (
         <>
-            <main className="h-full w-full scrollbar bg-black scrollbar-thumb-gray-900 scrollbar-track-gray-100">
+            <main className="h-full w-full scrollbar bg-white scrollbar-thumb-gray-900 scrollbar-track-gray-100">
                 <Nav />
                 <Gallery />
                 {/* <Team /> */}

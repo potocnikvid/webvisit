@@ -8,7 +8,7 @@ export default function Nav() {
     const [navbarOpen, setNavbarOpen] = React.useState(false);
 
     return (
-        <div className="text-white">
+        <div className="text-black">
             <motion.nav
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 0.8 }}
