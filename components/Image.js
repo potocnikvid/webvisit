@@ -1,8 +1,9 @@
 import React, { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import Image from "next/image";
 
-export default function About() {
+export default function ImageComponent({src, width, height, className, alt}) {
   let easing = [0.6, -0.05, 0.01, 0.99];
 
   const fadeIn = {
@@ -22,18 +23,20 @@ export default function About() {
   }, [controls, inView]);
 
   return (
-    <div className="mx-auto mt-[8rem] mb-[8rem] flex max-w-7xl lg:mb-[15rem] lg:mt-[15rem]">
-      <motion.p
-        ref={ref}
-        animate={controls}
-        initial="hidden"
-        variants={fadeIn}
-        className="w-[70rem] text-white text-2xl lg:text-5xl"
-      >
-        We are a multinational agency specialising in web design, web
-        development and brand identity. We provide an exceptional experience for
-        every website we make.
-      </motion.p>
-    </div>
+    <motion.div
+    ref={ref}
+    animate={controls}
+    initial="hidden"
+    variants={fadeIn}
+  >
+    <Image
+      className={className}
+      src={src}
+      alt={alt}
+      width={width}
+      height={height}
+    />
+  </motion.div>
+
   );
 }

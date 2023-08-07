@@ -15,12 +15,16 @@
     "@next/bundle-analyzer": "^13.0.5",
     "@vercel/analytics": "^0.1.5",
     "alpinejs": "^3.10.5",
+    "cloudinary": "^1.40.0",
     "daisyui": "^2.39.0",
     "framer-motion": "^6.5.1",
+    "imagemin": "^8.0.1",
+    "imagemin-jpegtran": "^7.0.0",
     "keen-slider": "^6.7.0",
     "next": "^13.0.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-hooks-global-state": "^2.1.0",
     "react-intersection-observer": "^9.3.3"
   },
   "devDependencies": {
