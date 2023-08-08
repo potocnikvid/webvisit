@@ -13,7 +13,7 @@ import getBase64ImageUrl from "../../utils/generateBlurPlaceholder";
 import type { ImageProps } from "../../utils/types";
 import { useLastViewedPhoto } from "../../utils/useLastViewedPhoto";
 
-const Photography: NextPage = ({ images }: { images: ImageProps[] }) => {
+const PhotoGallery: NextPage = ({ images }: { images: ImageProps[] }) => {
   const router = useRouter();
   const { photoId } = router.query;
   const [lastViewedPhoto, setLastViewedPhoto] = useLastViewedPhoto();
@@ -39,7 +39,7 @@ const Photography: NextPage = ({ images }: { images: ImageProps[] }) => {
           <div className="mx-auto max-w-[1960px] p-4">
             {photoId && (
               <Modal
-              subpage={'photography'}
+              subpage={'photo'}
 
                 images={images}
                 onClose={() => {
@@ -51,8 +51,8 @@ const Photography: NextPage = ({ images }: { images: ImageProps[] }) => {
               {images.map(({ id, public_id, format, blurDataUrl }) => (
                 <Link
                   key={id}
-                  href={`/photography/?photoId=${id}`}
-                  as={`/photography/p/${id}`}
+                  href={`/photo/?photoId=${id}`}
+                  as={`/photo/p/${id}`}
                   ref={
                     id === Number(lastViewedPhoto) ? lastViewedPhotoRef : null
                   }
@@ -84,11 +84,11 @@ const Photography: NextPage = ({ images }: { images: ImageProps[] }) => {
   );
 };
 
-export default Photography;
+export default PhotoGallery;
 
 export async function getStaticProps() {
   const results = await cloudinary.v2.search
-    .expression(`folder:${process.env.CLOUDINARY_FOLDER_PHOTOGRAPHY}/*`)
+    .expression(`folder:${process.env.CLOUDINARY_FOLDER_PHOTO}/*`)
     .sort_by("public_id", "desc")
     .max_results(400)
     .execute();

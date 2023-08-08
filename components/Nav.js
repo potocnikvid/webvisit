@@ -75,7 +75,7 @@ export default function Nav() {
             <div className="flex-col text-lg space-x-16 lg:flex-grow pointer-events-auto">
               <Link href="/">Domov</Link>
               <Link href="/streetview">Google Street View</Link>
-              <Link href="/photography">Fotografija</Link>
+              <Link href="/photo">Fotografija</Link>
               <Link href="/video">Video</Link>
               <Link href="/about">O nas</Link>
               <Link href="/contact">Kontakt</Link>
