@@ -23,26 +23,6 @@ export default function Landing() {
         >
           Interaktivni pogled s klikom miške
         </motion.p>
-        {/* <motion.a
-                href="#jobs"
-                key="logo"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 0.8 }}
-                transition={{ duration: 0.4, delay: 1 }}
-                className="inline-flex items-center rounded-lg bg-gradient-to-r from-yellow-600 via-red-600 to-purple-600 py-3 px-4 pointer-events-auto select-none"
-            >
-                See open positions
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth={1.5}
-                    stroke="currentColor"
-                    className="w-6 h-6"
-                >
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-                </svg>
-            </motion.a> */}
         <motion.a
           href="#references"
           key="logo"
