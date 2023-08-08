@@ -5,7 +5,7 @@ import Image from "next/image";
 
 import { motion } from "framer-motion";
 
-export default function Nav() {
+export default function Footer() {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
 
   return (
@@ -14,7 +14,7 @@ export default function Nav() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.4, delay: 0.5 }}
-      className="mx-auto flex w-full max-w-7xl flex-col overflow-auto py-6 px-3 text-black lg:flex-row lg:items-center lg:justify-between
+      className="mx-auto flex w-full max-w-7xl flex-col overflow-auto py-6 px-3 bg-white text-black lg:flex-row lg:items-center lg:justify-between
       "
     >
       <div className="flex flex-row items-center justify-between">

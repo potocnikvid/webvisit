@@ -22,7 +22,7 @@ export default function About() {
   }, [controls, inView]);
 
   return (
-    <div className="mx-auto mt-[8rem] mb-[8rem] flex max-w-7xl lg:mb-[15rem] lg:mt-[15rem]">
+    <div className="mx-auto bg-black px-16 pt-[8rem] pb-[8rem] flex max-w-7xl lg:pb-[15rem] lg:pt-[15rem]">
       <motion.p
         ref={ref}
         animate={controls}

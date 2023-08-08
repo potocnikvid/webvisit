@@ -3,7 +3,17 @@ import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import Image from "next/image";
 
-export default function ImageComponent({src, width, height, className, alt}) {
+export default function ImageComponent({
+  src,
+  width,
+  height,
+  className,
+  alt,
+  style,
+  placeholder,
+  blurDataURL,
+  sizes,
+}) {
   let easing = [0.6, -0.05, 0.01, 0.99];
 
   const fadeIn = {
@@ -23,20 +33,18 @@ export default function ImageComponent({src, width, height, className, alt}) {
   }, [controls, inView]);
 
   return (
-    <motion.div
-    ref={ref}
-    animate={controls}
-    initial="hidden"
-    variants={fadeIn}
-  >
-    <Image
-      className={className}
-      src={src}
-      alt={alt}
-      width={width}
-      height={height}
-    />
-  </motion.div>
-
+    <motion.div ref={ref} animate={controls} initial="hidden" variants={fadeIn}>
+      <Image
+        sizes={sizes}
+        blurDataURL={blurDataURL}
+        placeholder={placeholder}
+        style={style}
+        className={className}
+        src={src}
+        alt={alt}
+        width={width}
+        height={height}
+      />
+    </motion.div>
   );
 }

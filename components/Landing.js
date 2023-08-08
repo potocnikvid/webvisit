@@ -1,53 +1,18 @@
-import { motion } from "framer-motion";
+import React, { useEffect } from "react";
+import Hero from "./Hero";
+
 
 export default function Landing() {
-  return (
-    <div className="z-30 p-5 w-full sm:w-4/5 lg:w-2/3 pointer-events-none">
-      <div className="mx-auto justify-center space-y-3 pt-4 text-center mt-24 mb-[6rem] md:px-6 lg:mt-[11rem] lg:mb-[14.5rem] lg:space-y-6">
-        <motion.h1
-          key="logo"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 0.8 }}
-          transition={{ duration: 0.4, delay: 0.8 }}
-          className="text-4xl text-white xl:text-6xl select-none"
-        >
-          Omogočite interaktivni <br className="hidden  lg:flex" />
-          spletni obisk v 3D tehniki
-        </motion.h1>
-        <motion.p
-          key="logo"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 0.8 }}
-          transition={{ duration: 0.4, delay: 0.9 }}
-          className="text-md  basiersquare-medium xl:text-xl text-white select-none"
-        >
-          Interaktivni pogled s klikom miške
-        </motion.p>
-        <motion.a
-          href="#references"
-          key="logo"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 0.8 }}
-          transition={{ duration: 0.4, delay: 1 }}
-          className="mx-auto block py-3 absolute inset-x-0 bottom-0 px-6 w-24 pointer-events-auto select-none"
-        >
-          {" "}
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth={2}
-            stroke="currentColor"
-            className="animate-bounce text-white w-12 h-12 md:w-20 md:h-20 mx-auto"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M19.5 5.25l-7.5 7.5-7.5-7.5m15 6l-7.5 7.5-7.5-7.5"
-            />
-          </svg>
-        </motion.a>
-      </div>
-    </div>
-  );
+    return (
+        <div className="relative flex items-center justify-center h-screen mb-12 overflow-hidden">
+            <Hero />
+            <iframe
+                className="ku-embed absolute w-auto min-w-full min-h-full max-w-none"
+                src="https://www.google.com/maps/embed?pb=!4v1669493840616!6m8!1m7!1sCAoSLEFGMVFpcFBjLU1pTU9IQi1BM3J5RHkxQUQxVnBYbmtMRTEyd3ZLLV9QNUN3!2m2!1d46.07527017919635!2d14.48439221530951!3f55.82!4f1.8299999999999983!5f0.7820865974627469"
+                allowFullScreen=""
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
+        </div>
+    );
 }

@@ -1,6 +1,4 @@
 {
-  "name": "careers-page",
-  "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -10,29 +8,31 @@
   },
   "dependencies": {
     "@headlessui/react": "^1.7.4",
-    "@headlessui/tailwindcss": "^0.1.1",
+    "@headlessui/tailwindcss": "^0.2.0",
     "@heroicons/react": "^2.0.13",
-    "@next/bundle-analyzer": "^13.0.5",
-    "@vercel/analytics": "^0.1.5",
-    "alpinejs": "^3.10.5",
-    "cloudinary": "^1.40.0",
-    "daisyui": "^2.39.0",
-    "framer-motion": "^6.5.1",
+    "cloudinary": "^1.32.0",
+    "eslint-config-next": "^13.0.1",
+    "framer-motion": "^7.6.4",
     "imagemin": "^8.0.1",
     "imagemin-jpegtran": "^7.0.0",
-    "keen-slider": "^6.7.0",
-    "next": "^13.4.13",
+    "keen-slider": "^6.8.6",
+    "next": "latest",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-hooks-global-state": "^2.1.0",
-    "react-intersection-observer": "^9.3.3"
+    "react-hooks-global-state": "^2.0.0",
+    "react-intersection-observer": "^9.5.2",
+    "react-swipeable": "^7.0.0",
+    "react-use-keypress": "^1.3.1",
+    "tailwind-scrollbar": "^3.0.5"
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.7",
-    "eslint": "^8.17.0",
-    "eslint-config-next": "^13.4.13",
-    "postcss": "^8.4.14",
-    "tailwind-scrollbar": "^2.0.1",
-    "tailwindcss": "^3.2.2"
+    "@types/node": "18.11.9",
+    "@types/react": "18.0.25",
+    "autoprefixer": "^10.4.13",
+    "postcss": "^8.4.18",
+    "prettier": "^2.7.1",
+    "prettier-plugin-tailwindcss": "^0.1.13",
+    "tailwindcss": "^3.2.1",
+    "typescript": "4.8.4"
   }
 }
